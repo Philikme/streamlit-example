@@ -5,20 +5,20 @@ import pandas as pd
 import streamlit as st
 
 """
-# Welcome to Streamlit!
+# Bienvenue à Streamlit ! 
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
+Editez `/streamlit_app.py` pour personnaliser cette application selon vos désirs :heart :
 
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
+Si vous avez des questions, consultez notre [documentation](https://docs.streamlit.io) et nos [forums communautaires](https://docs.streamlit.io).
 forums](https://discuss.streamlit.io).
 
-In the meantime, below is an example of what you can do with just a few lines of code:
+En attendant, voici un exemple de ce que vous pouvez faire avec seulement quelques lignes de code :
 """
 
 
 with st.echo(code_location='below'):
-    total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
-    num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
+    total_points = st.slider("Nombre de points dans la spirale", 1, 5000, 2000)
+    num_turns = st.slider("Nombre de tours de la spirale", 1, 100, 9)
 
     Point = namedtuple('Point', 'x y')
     data = []
